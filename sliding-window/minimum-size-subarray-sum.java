@@ -15,7 +15,7 @@ class Solution {
                 }
             }
         }
-        return result==Integer.MAX_VALUE ? 0 : subLength;
+        return result==Integer.MAX_VALUE ? 0 : result;
         
     }
 }
