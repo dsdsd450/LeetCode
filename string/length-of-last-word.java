@@ -10,7 +10,7 @@ class Solution {
         }
 
         //3、找到最后一个单词
-        if(i>=0&&s.charAt(i) ! ==' '){
+        if(i>=0&&s.charAt(i) !=' '){
             i--;
             length++;
         }
