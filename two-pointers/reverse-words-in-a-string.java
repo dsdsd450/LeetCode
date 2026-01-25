@@ -21,9 +21,7 @@ class Solution {
         StringBuilder sb=new StringBuilder();
         while( left<=right){
             char c=s.charAt(left);
-            if(c !=' '){
-                sb.append(c);
-            }else if(sb.charAt(sb.length()-1) !=' '){
+            if(c !=' ' || sb.charAt(sb.length()-1) !=' '){
                 sb.append(c);
             }
             left++;
