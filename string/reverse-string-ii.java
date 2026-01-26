@@ -7,7 +7,7 @@ class Solution {
         int remainder = n % (2*k);
 
         for(int i=0;i<=q-1;i++){
-            reverse(sb,0+k*i,k*(i+1)-1);
+            reverse(sb,0+2*k*i,k+2*k*i-1);
         }
 
         if(remainder < k && remainder>0) reverse(sb,2*k*q,n-1);
