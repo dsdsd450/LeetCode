@@ -17,7 +17,7 @@ class Solution {
     }
 
     private void reverse(StringBuilder sb,int left,int right){
-        while(left<right){
+        while(left<=right){
             char tmp=sb.charAt(left);
             sb.setCharAt(left++,sb.charAt(left));
             sb.setCharAt(right--,tmp);
