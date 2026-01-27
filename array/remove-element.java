@@ -1,13 +1,13 @@
 class Solution {
     public int removeElement(int[] nums, int val) {
-        //快慢指针
-        int slowIndex=0;
-        for(int fastIndex=0;fastIndex<nums.length;fastIndex++){
-            if(nums[fastIndex]!=val){
-                nums[slowIndex]=nums[fastIndex];
-                slowIndex++;
+        int slow=0;
+
+        for(int fast=0;fast<nums.length;fast++){
+            if(nums[fast]!=val){
+                nums[slow]=nums[fast];
+                slow++;
             }
         }
-        return slowIndex;
+        return slow;
     }
 }
